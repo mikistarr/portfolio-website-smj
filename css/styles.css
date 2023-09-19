@@ -1,5 +1,162 @@
+/* 
+Colors used:
+Primary color (Hot Pink): #DD0E83;
+Secondary color (Dark Gray): #333333;
+Tertiary color (Tan): #EEEAE5;
+*/
+
+/*
+Button classes list:
+.button {
+    background-color: #DD0E83;
+    border: none;
+    color: antiquewhite;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 0%;
+}
+
+.button:visited {
+    background-color:#DD0E83;
+    color: #EEEAE5;
+}
+
+.button:hover {
+    background-color: #EEEAE5;
+    color: #333;
+    border: 1px solid #333;
+    text-decoration: none;
+
+}
+
+.secondary-button {
+    background-color: #EEEAE5;
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 0%;
+}
+*/
+
+body {
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700px;
+    line-height: 1.20;
+}
+
 h1 {
-font-size: 30px;
-font-weight: 700;
-color: blue;
+    font-size: 2.75em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+  
+  h3 {
+    font-size: 1.25em;
+  }
+  h4 {
+    font-size: 1.15em;
+  }
+
+span {
+    font-size: .70em;
+    line-height: 1.0;
+}
+
+a {
+    color: #DD0E83;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #DD0E83;
+    text-decoration: none;
+}
+
+a:hover, 
+a:focus {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #EEEAE5;
+}
+
+img {
+    width: 100%;
+}
+
+/* Keep these at bottom */
+.button {
+    background-color: #DD0E83;
+    border: 1px solid #DD0E83;
+    color: antiquewhite;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 0%;
+}
+
+.button:visited {
+    background-color:#DD0E83;
+    color: #EEEAE5;
+}
+
+.button:hover {
+    background-color: #EEEAE5;
+    color: #333;
+    border: 1px solid #333;
+    text-decoration: none;
+
+}
+.secondary-button {
+    background-color: #EEEAE5;
+    border: 1px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 0%;
+}
+.secondary-button:visited {
+    background-color: #EEEAE5;
+    color: #333;
+}
+
+.secondary-button:hover {
+    background-color: #DD0E83;
+    color: #EEEAE5;
+    text-decoration: none;
+    border: 1px solid #DD0E83;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #333;
+    border: 2px double #333;
+}
+
+.button.contact:hover {
+    background-color: #333;
+    color: #EEEAE5;
 }
