@@ -101,13 +101,37 @@ img {
     width: 100%;
 }
 
-/* Keep these at bottom */
+/* 
+ID declarations: 
+
+#hero
+#projects
+#contact
+#header
+#background
+#readers
+#approach
+#solution
+#inspiration
+#personas
+#problem-statement
+#info-architect
+#iteration
+#branding
+#solution
+#learnings
+#conclusion
+*/
+
+/* 
+Button declarations — Keep these at bottom 
+*/
+
 .button {
     background-color: #DD0E83;
-    border: 1px solid #DD0E83;
+    border: none;
     color: antiquewhite;
     padding: 10px 20px;
-    margin: 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -125,8 +149,8 @@ img {
     color: #333;
     border: 1px solid #333;
     text-decoration: none;
-
 }
+
 .secondary-button {
     background-color: #EEEAE5;
     border: 1px solid #333;
