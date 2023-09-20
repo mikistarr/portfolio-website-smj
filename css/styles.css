@@ -54,7 +54,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 1.20;
 }
 
@@ -101,27 +101,6 @@ img {
     width: 100%;
 }
 
-/* 
-ID declarations: 
-
-#hero
-#projects
-#contact
-#header
-#background
-#readers
-#approach
-#solution
-#inspiration
-#personas
-#problem-statement
-#info-architect
-#iteration
-#branding
-#solution
-#learnings
-#conclusion
-*/
 
 /* 
 Button declarations — Keep these at bottom 
