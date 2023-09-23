@@ -45,38 +45,51 @@ Button classes list:
 }
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fafafa;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
-    font-size: 20px;
-    line-height: 1.35;
+    font-size: 18px;
+    line-height: 1.4;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
     line-height: 1.20;
 }
 
 h1 {
     font-size: 2.75em;
-    margin: bottom;
 }
 
 h2 {
     font-size: 1.75em;
 }
-  
-  h3 {
+
+h3 {
     font-size: 1.25em;
-  }
-  h4 {
+}
+
+h4 {
     font-size: 1.15em;
-  }
+}
+
+#hero h1 {
+    text-align: center;
+    padding: 0.67em 0;
+}
 
 span {
     font-size: .70em;
-    line-height: 1.35;
+    display: inline;
+
 }
 
 a {
@@ -89,7 +102,7 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover, 
+a:hover,
 a:focus {
     text-decoration: underline;
 }
@@ -102,26 +115,322 @@ img {
     width: 100%;
 }
 
+figcaption {
+    font-size: 15px;
+    font-style: italic;
+}
 
-/* 
-Button declarations — Keep these at bottom 
-*/
+
+/* Page layout declarations */
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 40px 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    /*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 0; 
+	box-shadow: -2px -1px 20px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: -2px -1px 20px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: -2px -1px 20px rgba(0, 0, 0, 0.3)  ; 
+    position: fixed 
+    
+}
+
+main {
+    padding-top: 100px;
+}
+
+.logo {
+    max-width: 80px;
+    margin-top: 10px;
+}
+
+nav {
+    float: right;
+    background-color: #EEEAE5;
+    width: 250px;
+    height: auto;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    font-weight: 500;
+    color: #696969;
+}
+
+nav ul li a:visited {
+    color: #696969;
+}
+
+nav ul li a:hover {
+    color: #DD0E83;
+    text-decoration: none;
+}
+
+.fancy-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.fancy-text-sm {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #054952;
+    font-size: 18px;
+    text-align: right;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    opacity: 95%;
+    padding: 10%;
+
+}
+
+.social {
+    text-align: center;
+    padding-top: 7%;
+    
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.social svg {
+    width: 60px;
+    height: auto;
+    padding: 0px 7px 0px;
+}
+
+.contact-text {
+    color: #EEEAE5;
+    margin-bottom: 10px;
+}
+
+.ask-container {
+    padding: 0 15px;
+}
+
+.ask-container h4 {
+    color: #054952;
+}
+
+
+/* Unique declarations */
+
+#hero {
+    background-color: #EEEAE5;
+    padding-bottom: 15px;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#hero h6 {
+    color: #DD0E83;
+    margin-bottom: 14px;
+}
+
+#hero h2 {
+    margin-top: 13px;
+}
+
+#projects .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #4a4a4a;
+    margin-top: 20px;
+}
+
+#projects h6 {
+    color: #DD0E83;
+    margin-bottom: 14px;
+}
+
+#projects h2 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+#projects span {
+    font-size: 15px;
+}
+
+#quote {
+    background-color: #DD0E83;
+    padding: 1% 5% 0 5%;
+    height: 200px;
+}
+
+#quote p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #232323;
+}
+
+#quote span {
+    display: inline-block;
+    padding-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #EEEAE5;
+}
+
+#testimonial {
+    background-color: #EEEAE5;
+    padding: 5% 10% ;
+    margin-top: 5%;
+}
+
+#testimonial svg {
+    width: 75px;
+    height: auto;
+    text-align: center;
+}
+
+#interview iframe {
+    width: 100%;
+}
+
+#interview h6 {
+    color: #DD0E83;
+    margin-bottom: 14px;
+}
+
+#interview h2 {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+#skills {
+    padding-top: 20px;
+    margin-top: 25px;
+    border-top: 1px solid #333;
+}
+
+#askolive h2 {
+    margin-top: 13px;
+    margin-bottom: 13px; ;
+}
+
+#askhero {
+    background-image: linear-gradient(#054952 -60%, white);
+    padding-top: 20px;
+}
+
+#askhero h2 {
+    color: #054952;
+}
+
+#askhero-bkg h4 {
+    color: #054952;
+}
+
+#ask-inspo {
+    background-color: #D5DEDF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#ask-inspo h4 {
+    color: #054952;
+}
+
+#ask-problem {
+    background-color: #D5DEDF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#ask-problem h4 {
+    color: #054952;
+}
+
+#ask-problem svg {
+    width: 125px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+#ask-persona h4 {
+    color: #054952;
+}
+
+#ask-solution {
+    background-color: #D5DEDF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#ask-prototype {
+    background-color: #D5DEDF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#ask-conclusion {
+    background-color: #D5DEDF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#copyright {
+    color: #fff;
+    font-size: medium;
+    line-height: 1.5em;
+}
+
+/* Button declarations — Keep these at bottom */
 
 .button {
     background-color: #DD0E83;
-    border: none;
-    color: antiquewhite;
+    border: 1px solid #DD0E83;
+    color: #fff;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
-    border-radius: 0%;
+    font-weight: 600;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    margin: 12px 0;
 }
 
 .button:visited {
-    background-color:#DD0E83;
-    color: #EEEAE5;
+    background-color: #DD0E83;
+    color: #fff;
 }
 
 .button:hover {
@@ -129,21 +438,25 @@ Button declarations — Keep these at bottom
     color: #333;
     border: 1px solid #333;
     text-decoration: none;
+    font-weight: 100;
 }
 
 .secondary-button {
-    background-color: #EEEAE5;
+    background-color: #fff;
     border: 1px solid #333;
     color: #333;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
-    border-radius: 0%;
+    font-size: 1.15em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    border-radius: 50px;
 }
+
 .secondary-button:visited {
-    background-color: #EEEAE5;
+    background-color: #fff;
     color: #333;
 }
 
@@ -155,9 +468,14 @@ Button declarations — Keep these at bottom
 }
 
 .button.contact {
-    background-color: transparent;
-    color: #333;
-    border: 2px double #333;
+    background-color: #DD0E83;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .button.contact:hover {
