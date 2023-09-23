@@ -14,19 +14,22 @@
 
 <body id="askolive">
     <header>
-        <a href="index.html"> <img src="/img/starr-logo.svg" alt="Being MikiStarr logo"> </a>
-        <nav>
-            <ul>
-                <li> <a href="index.html#work"> Work </a> </li>
-                <li> <a href="about.html"> About </a> </li>
-                <li> <a href="#contact"> Contact </a> </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <a href="index.html"> <img src="/img/starr-logo.svg" class="logo" alt="Being MikiStarr logo"> </a>
+
+            <nav>
+                <ul>
+                    <li> <a href="#projects"> Work </a> </li>
+                    <li> <a href="about.html"> About </a> </li>
+                    <li> <a href="mailto:designer@mikistarr.com"> Contact </a> </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div> <!-- Section: Hero-->
-            <div> <!-- Start container: -->
+        <div id="askhero"> <!-- Section: Hero-->
+            <div class="container">
                 <div>
                     <h6> CASE STUDY | UX </h6>
                     <h2> Better Health Starts with Better Health Education </h2>
@@ -41,8 +44,8 @@
             </div> <!-- End container -->
         </div> <!-- End section: Hero -->
 
-        <div> <!-- Section: Background -->
-            <div> <!-- Start container: -->
+        <div id="askhero-bkg"> <!-- Section: Background -->
+            <div class="ask-container">
                 <h4> PROJECT BACKGROUND </h4>
                 <p> Introducing Olive! But hold on, let’s take a step back. Allow me to introduce you to the source of
                     inspiration behind Olive. The initial idea for this web application originated from the project
@@ -50,14 +53,14 @@
                     Bootcamp. This assignment tasked me with creating an inclusively designed, responsive web portal
                     (app). The primary goal was to offer comprehensive health and wellness information while also
                     providing users with a platform to store their medical records and appointments. </p>
-                <blockquote> Allow health-conscious individuals to log in to a responsive health
+                <blockquote class="fancy-text-sm"> Allow health-conscious individuals to log in to a responsive health
                     and wellbeing portal to record their health and medical information,
                     and access general physical and mental wellbeing features. </blockquote>
             </div> <!-- End container -->
         </div> <!-- End section: Background -->
 
-        <div> <!-- Section: Inspiration -->
-            <div> <!--Start container -->
+        <div id="ask-inspo"> <!-- Section: Inspiration -->
+            <div class="ask-container">
                 <div>
                     <h4> HYPOTHESIS </h4>
                     <p> Before embarking on a solution, my first step was to comprehend the problem from the user’s
@@ -83,8 +86,8 @@
             </div> <!-- End container -->
         </div> <!-- End section: Inspiration -->
 
-        <div> <!-- Start section: Personas -->
-            <div> <!-- Start container -->
+        <div id="ask-persona"> <!-- Start section: Personas -->
+            <div class="ask-container">
                 <h4> USER PERSONAS </h4>
                 <p> To better comprehend my users’ viewpoints, I synthesized data from surveys and interviews. This
                     formed a comprehensive understanding of their identities, usage context, motivations, and
@@ -112,38 +115,38 @@
                         <img src="/img/ask-olive/askolive-persona-journey@2x.jpg" alt="User persona jpurney map">
                     </picture>
                 </figure>
-                <blockquote> “You’re doing something and you’re not seeing
+                <blockquote class="fancy-text-sm"> “You’re doing something and you’re not seeing
                     the results and no one is telling you the results
                     —that’s more detrimental.”
                 </blockquote>
             </div><!-- End container -->
         </div> <!-- End section: Personas -->
 
-        <div> <!-- Start section: Problem Statement -->
-            <div> <!-- Start container -->
+        <div id="ask-problem"> <!-- Start section: Problem Statement -->
+            <div class="ask-container">
                 <h4> PROBLEM STATEMENT </h4>
                 <p> With my persona developed and solidified, I reached the point where I began contemplating how to
                     devise a solution. </p>
-                <blockquote>
+                <blockquote class="fancy-text">
                     <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z"
                             fill-rule="nonzero" />
                     </svg>
-                    Layla needs a way to create a healthier lifestyle to
+                    <br> Layla <b>needs a way </b>to create a healthier lifestyle to
                     improve overall health without the pressure of lengthy
                     workouts and food calorie tracking.
                     <br> <br>
-                    We will know this to be true when we see an increase in
+                    <b>We will know this to be true when</b> we see an increase in
                     average calories burned and/or activities completed and
                     reduction in joint pain on a regular basis.
                 </blockquote>
             </div> <!-- End container -->
         </div> <!-- End section: Problem Statement -->
 
-        <div> <!-- Start section: Information Architecture -->
-            <div> <!-- Start container -->
+        <div id="ask-info"> <!-- Start section: Information Architecture -->
+            <div class="container">
                 <h4> INFORMATION ARCHITECTURE </h4>
                 <p> Before delving into the design of my web portal, my first step was to grasp the crucial content that
                     required sharing. For the initial assessment, catering to both the user’s requirements and project
@@ -176,8 +179,8 @@
             </div> <!-- End container -->
         </div> <!-- End section: Information Architecture -->
 
-        <div> <!-- Start section: Iteration -->
-            <div> <!-- Start container -->
+        <div id="ask-prototype"> <!-- Start section: Iteration -->
+            <div class="ask-container">
                 <h4> PROTOTYPING</h4>
                 <p> With a design mocked up it was time to move on to the testing phase. I used Adobe
                     XD to pull everything together and create my first functioning prototype. I created a test plan with
@@ -199,12 +202,14 @@
         </div> <!-- End section: Iteration -->
 
         <div> <!-- Start section: Branding -->
-            <div> <!-- Start container -->
+            <div>
                 <picture>
                     <source srcset="img/ask-olive/askolive-prototype@1x.jpg" media="screen and (max-width:767px)">
                     <img src="img/ask-olive/askolive-prototype@2x.jpg"
                         alt="Photo of hand holding cellphone with prototype loaded">
                 </picture>
+            </div>
+            <div class="ask-container">
                 <h4> BRANDING </h4>
                 <p> After contemplating the emotions I wanted to evoke and ensure they harmonized with the purpose and
                     objectives of the application I settled on a primary color palette that leans towards bluish-green,
@@ -230,8 +235,8 @@
             </div> <!-- End container -->
         </div> <!-- End section: Branding -->
 
-        <div> <!-- Start section: Solution -->
-            <div> <!-- Start container -->
+        <div id="ask-solution"> <!-- Start section: Solution -->
+            <div class="ask-container">
                 <h4> MEET OLIVE! </h4>
                 <p> Ask Olive has transformed into a comprehensive web portal application that seeks to leverage AI to
                     cater to the needs of individuals grappling with health and wellness challenges. Upon signing up and
@@ -246,19 +251,20 @@
                 <p>Following months of empathizing, defining, ideating, prototyping, testing, and iterating, I’ve
                     crafted an application that not only fills me with pride but also possesses the potential to
                     transform lives.</p>
-                <div>
-                    <picture>
-                        <source srcset="img/ask-olive/askolive-olive-thumb@1x.jpg" media="screen and (max-width:767px)">
-                        <img src="img/ask-olive/askolive-olive-thumb@2x.jpg"
-                            alt="Flatlay of various screenshots of Ask Olive in multiple cellphones">
-                    </picture>
-                    <p> <a href="#"> View Full Prototype </a> </p>
-                </div>
+
+                <p> <a href="#"> View Full Prototype </a> </p>
             </div> <!-- End container -->
         </div> <!-- End section: Solution -->
+        <div>
+            <picture>
+                <source srcset="img/ask-olive/askolive-olive-thumb@1x.jpg" media="screen and (max-width:767px)">
+                <img src="img/ask-olive/askolive-olive-thumb@2x.jpg"
+                    alt="Flatlay of various screenshots of Ask Olive in multiple cellphones">
+            </picture>
+        </div>
 
         <div> <!-- Start section: Learnings -->
-            <div> <!-- Start container -->
+            <div class="ask-container">
                 <h4> LEARNINGS </h4>
                 <p> Throughout this process, I’ve gleaned a couple of lessons—and not just about the process itself:
                 </p>
@@ -277,8 +283,8 @@
             </div> <!-- End container -->
         </div> <!-- End section: Learnings -->
 
-        <div> <!-- Start section: Conclusion-->
-            <div> <!-- Start container -->
+        <div id="ask-conclusion"> <!-- Start section: Conclusion-->
+            <div class="ask-container">
                 <div>
                     <h4> CONCLUSION </h4>
                     <p> For many, meeting wellness goals can be challenging. It’s not merely a matter of calories in
@@ -290,97 +296,72 @@
                         <i>Just ask Olive! </i>
                     </p>
                 </div>
-                <div>
-                    <picture>
-                        <source srcset="img/ask-olive/askolive-mariah@1x.jpg" media="screen and (max-width:767px)">
-                        <img src="img/ask-olive/askolive-mariah@2x.jpg"
-                            alt="Photo of slightly heavy woman wearing black workout clothes">
-                    </picture>
-                </div>
+                
             </div> <!-- End container -->
+            <div>
+                <picture>
+                    <source srcset="img/ask-olive/askolive-mariah@1x.jpg" media="screen and (max-width:767px)">
+                    <img src="img/ask-olive/askolive-mariah@2x.jpg"
+                        alt="Photo of slightly heavy woman wearing black workout clothes">
+                </picture>
+            </div>
         </div> <!-- End section: Conclusion-->
     </main>
 
     <footer id="contact">
         <div> <!-- Container: Footer content -->
-            <h2> Get in Contact </h2>
-            <p> Lorem ipsum set dolor (123) 456-7890. </p>
-            <div>
-                <a href="mailto:designer@mikistarr.com"> Email </a>
-            </div>
-            <div> <!-- Social Media Icons -->
-                <ul>
-                    <li> <a href="http://www.linkedin.com/in/shawnmichellejohnson" target="_blank">
-                            <svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1"
-                                viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <div class="social"> <!-- Social Media Icons -->
+                <a href="http://www.linkedin.com/in/shawnmichellejohnson" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="250" height="250"
+                        viewBox="0,0,256,256" style="fill:#000000;">
+                        <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none"  font-size="none" 
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
                                 <path
-                                    d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-                                    style="fill-rule:evenodd;clip-rule:evenodd;fill:#007AB9;" />
-                            </svg>
-                        </a> </li>
+                                    d="M25,2c-12.682,0 -23,10.317 -23,23c0,12.683 10.318,23 23,23c12.682,0 23,-10.317 23,-23c0,-12.683 -10.318,-23 -23,-23zM18,35h-4v-15h4zM16,17c-1.105,0 -2,-0.895 -2,-2c0,-1.105 0.895,-2 2,-2c1.105,0 2,0.895 2,2c0,1.105 -0.895,2 -2,2zM37,35h-4v-5v-2.5c0,-1.925 -1.575,-3.5 -3.5,-3.5c-1.925,0 -3.5,1.575 -3.5,3.5v7.5h-4v-15h4v1.816c1.168,-1.122 2.752,-1.816 4.5,-1.816c3.59,0 6.5,2.91 6.5,6.5z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
 
-                    <li> <a href="https://www.facebook.com/shawnmichelle524" target="_blank">
-                            <svg height="100%"
-                                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                                version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path
-                                        d="M512,256c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z"
-                                        style="fill:#1877f2;fill-rule:nonzero;" />
-                                    <path
-                                        d="M355.65,330l11.35,-74l-71,0l0,-48.022c0,-20.245 9.917,-39.978 41.719,-39.978l32.281,0l0,-63c0,0 -29.297,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.89c13.033,2.045 26.392,3.11 40,3.11c13.608,0 26.966,-1.065 40,-3.11l0,-178.89l59.65,0Z"
-                                        style="fill:#fff;fill-rule:nonzero;" />
-                                </g>
-                            </svg>
-                        </a> </li>
+                <a href="https://www.facebook.com/shawnmichelle524" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="250" height="250"
+                        viewBox="0,0,256,256" style="fill:#000000;">
+                        <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-size="none" 
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
 
-                    <li> <a href="ANOTHER-SOCIAL-LINK">
-                            <svg id="Layer_2" style="enable-background:new 0 0 1000 1000;" version="1.1"
-                                viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <style type="text/css">
-                                    .st0 {
-                                        fill: url(#SVGID_1_);
-                                    }
-
-                                    .st1 {
-                                        fill: #FFFFFF;
-                                    }
-                                </style>
-                                <lineargradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="146.4465" x2="853.5535"
-                                    y1="853.5535" y2="146.4465">
-                                    <stop offset="0" style="stop-color:#FFD521" />
-                                    <stop offset="5.510481e-02" style="stop-color:#FFD020" />
-                                    <stop offset="0.1241" style="stop-color:#FEC01E" />
-                                    <stop offset="0.2004" style="stop-color:#FCA71B" />
-                                    <stop offset="0.2821" style="stop-color:#FA8316" />
-                                    <stop offset="0.3681" style="stop-color:#F85510" />
-                                    <stop offset="0.4563" style="stop-color:#F51E09" />
-                                    <stop offset="0.5" style="stop-color:#F30005" />
-                                    <stop offset="0.5035" style="stop-color:#F20007" />
-                                    <stop offset="0.5966" style="stop-color:#E1003B" />
-                                    <stop offset="0.6879" style="stop-color:#D30067" />
-                                    <stop offset="0.7757" style="stop-color:#C70088" />
-                                    <stop offset="0.8589" style="stop-color:#BF00A0" />
-                                    <stop offset="0.9357" style="stop-color:#BB00AF" />
-                                    <stop offset="1" style="stop-color:#B900B4" />
-                                </lineargradient>
-                                <path class="st0"
-                                    d="M500,1000L500,1000C223.9,1000,0,776.1,0,500v0C0,223.9,223.9,0,500,0h0c276.1,0,500,223.9,500,500v0  C1000,776.1,776.1,1000,500,1000z" />
-                                <g>
-                                    <path class="st1"
-                                        d="M500,220.2c91.1,0,101.9,0.3,137.9,2c33.3,1.5,51.4,7.1,63.4,11.8c15.9,6.2,27.3,13.6,39.2,25.5   c11.9,11.9,19.3,23.3,25.5,39.2c4.7,12,10.2,30.1,11.8,63.4c1.6,36,2,46.8,2,137.9s-0.3,101.9-2,137.9   c-1.5,33.3-7.1,51.4-11.8,63.4c-6.2,15.9-13.6,27.3-25.5,39.2c-11.9,11.9-23.3,19.3-39.2,25.5c-12,4.7-30.1,10.2-63.4,11.8   c-36,1.6-46.8,2-137.9,2s-101.9-0.3-137.9-2c-33.3-1.5-51.4-7.1-63.4-11.8c-15.9-6.2-27.3-13.6-39.2-25.5   c-11.9-11.9-19.3-23.3-25.5-39.2c-4.7-12-10.2-30.1-11.8-63.4c-1.6-36-2-46.8-2-137.9s0.3-101.9,2-137.9   c1.5-33.3,7.1-51.4,11.8-63.4c6.2-15.9,13.6-27.3,25.5-39.2c11.9-11.9,23.3-19.3,39.2-25.5c12-4.7,30.1-10.2,63.4-11.8   C398.1,220.5,408.9,220.2,500,220.2 M500,158.7c-92.7,0-104.3,0.4-140.7,2.1c-36.3,1.7-61.1,7.4-82.9,15.9   C254,185.3,234.9,197,216,216c-19,19-30.6,38-39.4,60.5c-8.4,21.7-14.2,46.5-15.9,82.9c-1.7,36.4-2.1,48-2.1,140.7   c0,92.7,0.4,104.3,2.1,140.7c1.7,36.3,7.4,61.1,15.9,82.9C185.3,746,197,765.1,216,784c19,19,38,30.6,60.5,39.4   c21.7,8.4,46.5,14.2,82.9,15.9c36.4,1.7,48,2.1,140.7,2.1s104.3-0.4,140.7-2.1c36.3-1.7,61.1-7.4,82.9-15.9   C746,814.7,765.1,803,784,784c19-19,30.6-38,39.4-60.5c8.4-21.7,14.2-46.5,15.9-82.9c1.7-36.4,2.1-48,2.1-140.7   s-0.4-104.3-2.1-140.7c-1.7-36.3-7.4-61.1-15.9-82.9C814.7,254,803,234.9,784,216c-19-19-38-30.6-60.5-39.4   c-21.7-8.4-46.5-14.2-82.9-15.9C604.3,159.1,592.7,158.7,500,158.7L500,158.7z" />
-                                    <path class="st1"
-                                        d="M500,324.7c-96.8,0-175.3,78.5-175.3,175.3S403.2,675.3,500,675.3S675.3,596.8,675.3,500   S596.8,324.7,500,324.7z M500,613.8c-62.8,0-113.8-50.9-113.8-113.8S437.2,386.2,500,386.2c62.8,0,113.8,50.9,113.8,113.8   S562.8,613.8,500,613.8z" />
-                                    <circle class="st1" cx="682.2" cy="317.8" r="41" />
-                                </g>
-                            </svg>
-                        </a> </li>
-                </ul>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240"
+                        viewBox="0,0,256,256" style="fill:#000000;">
+                        <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-size="none" 
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(8.53333,8.53333)">
+                                <path
+                                    d="M15,2c-7.168,0 -13,5.832 -13,13c0,7.168 5.832,13 13,13c7.168,0 13,-5.832 13,-13c0,-7.168 -5.832,-13 -13,-13zM11.66602,6h6.66602c3.125,0 5.66797,2.54202 5.66797,5.66602v6.66602c0,3.125 -2.54202,5.66797 -5.66602,5.66797h-6.66602c-3.125,0 -5.66797,-2.54202 -5.66797,-5.66602v-6.66602c0,-3.125 2.54202,-5.66797 5.66602,-5.66797zM11.66602,8c-2.021,0 -3.66602,1.64597 -3.66602,3.66797v6.66602c0,2.021 1.64597,3.66602 3.66797,3.66602h6.66602c2.021,0 3.66602,-1.64597 3.66602,-3.66797v-6.66601c0,-2.021 -1.64597,-3.66602 -3.66797,-3.66602zM19.66797,9.66602c0.368,0 0.66602,0.29802 0.66602,0.66602c0,0.368 -0.29801,0.66797 -0.66602,0.66797c-0.368,0 -0.66797,-0.29997 -0.66797,-0.66797c0,-0.368 0.29997,-0.66602 0.66797,-0.66602zM15,10c2.757,0 5,2.243 5,5c0,2.757 -2.243,5 -5,5c-2.757,0 -5,-2.243 -5,-5c0,-2.757 2.243,-5 5,-5zM15,12c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
             </div>
-            <p> copyright S Michelle Johnson 2023 </p>
+
+            <p id="copyright"> © 2005-2023 #BEINGCREATIVE Design Depot | St. Paul, MN | Miki Starr. All Rights Reserved.
+            </p>
         </div>
     </footer>
 </body>
