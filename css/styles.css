@@ -115,6 +115,10 @@ img {
     width: 100%;
 }
 
+.rem-space {
+    display: block;
+}
+
 figcaption {
     font-size: 15px;
     font-style: italic;
@@ -123,6 +127,9 @@ figcaption {
 
 /* Page layout declarations */
 
+.centered {
+    text-align: center;
+}
 .container {
     padding: 0 15px;
 }
@@ -136,8 +143,7 @@ header {
     padding: 10px 0;
     width: 100%;
     /*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
+	width: 100%; 
 	background: #F8F8F8; 
 	border: solid #BDBDBD 0; 
 	box-shadow: -2px -1px 20px rgba(0, 0, 0, 0.3)  ; 
@@ -315,7 +321,6 @@ footer {
 #testimonial svg {
     width: 75px;
     height: auto;
-    text-align: center;
 }
 
 #interview iframe {
