@@ -651,6 +651,13 @@ Medium devices (640px and larger)
         margin-bottom: 5px;
     }
 
+    #ask-conclusion {
+        display: grid;
+        grid-template-columns: 65% 35% ;
+      grid-template-rows: 100% ;
+       
+    }
+
 }
 
 /* ==============================
