@@ -330,6 +330,7 @@ blockquote {
     padding-left: 10%;
 }
 
+
 /* Unique declarations */
 
 #hero {
@@ -383,8 +384,6 @@ blockquote {
 }
 
 
-
-
 #quote {
     background-color: #DD0E83;
     padding: 2% 20px 2% 20px;
@@ -416,6 +415,11 @@ blockquote {
 #testimonial svg {
     width: 75px;
     height: auto;
+}
+
+.testimonial-bkg {
+    background-color: #EEEAE5;
+    
 }
 
 #video .row {
@@ -664,7 +668,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
     header {
-        padding: 10px 6%;
+        padding: 10px 6% 20px;
     }
 
     #quote span {
@@ -749,6 +753,8 @@ Medium devices (640px and larger)
         display: grid;
         grid-template-columns: 65% 35% ;
       grid-template-rows: 100% ;
+      padding-top: 0;
+      padding-bottom: 0;
        
     }
 
@@ -777,4 +783,8 @@ Small devices (Phone and Tablet)
     .parallax {
       background-attachment: scroll;
     }
+
+    .parallax2 {
+        background-attachment: scroll;
+      }
   }
