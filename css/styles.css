@@ -828,7 +828,7 @@ Extra-large devices (1920px or larger)
 /* ==============================
 Small devices (Phone and Tablet)
 ================================= */
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
