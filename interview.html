@@ -9,20 +9,24 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="img/favicon.png" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/9d223b9659.js" crossorigin="anonymous"></script>
     <title>MikiStarr | UI/UX Design | St. Paul MN</title>
 </head>
 
 <body id="interview">
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a href="index.html"> <img src="img/starr-logo.svg" class="logo" alt="Being MikiStarr logo"> </a>
             <nav>
                 <ul>
                     <li> <a href="index.html#projects"> Work </a> </li>
                     <li> <a href="about.html"> About </a> </li>
-                    <li> <a href="mailto:designer@mikistarr.com"> Contact </a> </li>
+                    <li> <a href="mailto:designer@mikistarr.com" onclick="menuToggle()"> Contact </a> </li>
+                    <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
 
@@ -217,6 +221,7 @@
             </p>
         </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

@@ -9,20 +9,24 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="img/favicon.png" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/9d223b9659.js" crossorigin="anonymous"></script>
     <title>MikiStarr | UI/UX Design | St. Paul MN</title>
 </head>
 
 <body id="aota">
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a href="index.html"> <img src="img/starr-logo.svg" class="logo" alt="Being MikiStarr logo"> </a>
             <nav>
                 <ul>
                     <li> <a href="index.html#projects"> Work </a> </li>
                     <li> <a href="about.html"> About </a> </li>
-                    <li> <a href="mailto:designer@mikistarr.com"> Contact </a> </li>
+                    <li> <a href="mailto:designer@mikistarr.com" onclick="menuToggle()"> Contact </a> </li>
+                    <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
                 </ul>
             </nav>
+        </div>
         </div>
     </header>
 
@@ -54,13 +58,13 @@
                 <h4> THE MISSION </h4>
                 <p> AOTA’s mission is threefold—
                     <br>
-                    Enhanced Comprehension
+                    <u>Enhanced Comprehension</u> <br>
                     Empower readers to grasp vocabulary effortlessly, so they can focus on the thrill of the story.
-                    <br>
-                    Seamless Immersion
+                    <br> <br>
+                    <u> Seamless Immersion </u> <br>
                     Immerse readers in the sci-fi universe, staying absorbed without interruption.
-                    <br>
-                    Personalized Assistance
+                    <br> <br>
+                    <u> Personalized Assistance </u> <br>
                     Minimize reliance on context and memory, allowing the reader to fully enjoy the narrative.
                 </p>
             </div> <!-- End container -->
@@ -71,61 +75,60 @@
                 <div>
                     <h4> THE READERS </h4>
                     <div class="row">
-                        <div>
+                        <div class="col-lg-7">
                             <picture>
                                 <source srcset="img/aota/aota-reader-parent@1x.jpg"
                                     media="screen and (max-width:767px)">
                                 <img src="img/aota/aota-reader-parent@2x.jpg" alt="Smiling mom with son and daughter">
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-lg-5">
                             <p> <b> The Busy Parent </b> <br>
                                 Juggling numerous responsibilities, they yearn to maximize their limited reading time.
                             </p>
-                            <p> USER STORY <br>
+                            <span> USER STORY <br>
                                 “As a busy parent I want to be able to access world-specific vocabulary definitions, no
                                 matter what format I’m reading in, so that I don’t lose too much of my valuable and
-                                limited reading time.” </p>
+                                limited reading time.” </span>
                         </div>
                     </div>
                     <div class="row">
-                        <div>
+                        <div class="col-lg-7">
                             <picture>
                                 <source srcset="img/aota/aota-reader-busy@1x.jpg" media="screen and (max-width:767px)">
                                 <img src="img/aota/aota-reader-busy@2x.jpg" alt="Smiling woman holding camera">
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-lg-5">
                             <p> <b> The Busy Beaver </b> <br>
                                 With a bustling work and social life, they seek a seamless way to stay engaged in their
                                 favorite novel.
                             </p>
-                            <p> USER STORY <br>
+                            <span> USER STORY <br>
                                 “As someone with limited time to dedicate to my hobbies I want an easy-to-use resource
                                 for accessing vocabulary definitions, character profiles, and world mapping so that I
-                                can remain engaged in reading with the smallest possible interruption.” </p>
+                                can remain engaged in reading with the smallest possible interruption.” </span>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div>
+                        <div class="col-lg-7">
                             <picture>
                                 <source srcset="img/aota/aota-reader-serial@1x.jpg"
                                     media="screen and (max-width:767px)">
-                                <img src="img/aota/aota-reader-serial@2x.jpg"
-                                    alt="Women standing back to back reading">
+                                <img src="img/aota/aota-reader-serial@2x.jpg" alt="Women standing back to back reading">
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-lg-5">
                             <p> <b> The Serial Reader </b> <br>
                                 Consuming multiple books at a time, they require a tool to navigate the intricate web of
                                 vocabulary that’s part of the Olivia series.
                             </p>
-                            <p> USER STORY <br>
+                            <span> USER STORY <br>
                                 “As an avid sci-fi/fantasy reader—and huge Olivia fan—I want to be better able to
                                 understand the vocabulary, characters, and other world-specific content relevant to the
                                 book I am reading so that I can better follow along with the storyline.”don’t lose too
-                                much of my valuable and limited reading time.” </p>
+                                much of my valuable and limited reading time.” </span>
                         </div>
                     </div>
                 </div>
@@ -148,82 +151,85 @@
                     Brown. As a busy mom of 2, she leads a very full life with limited downtime. She loves reading
                     whenever she can and can benefit from having limited distractions while reading the latest novel
                     from her favorite Olivia series. </p>
-                <picture>
+                <picture class="fade-in-image">
                     <source srcset="img/aota/aota-persona@1x.jpg" media="screen and (max-width:767px)">
-                    <img src="img/aota/aota-persona@2x.jpg" alt="User persona story for Sammie">
+                    <img src="img/aota/aota-persona@2x.jpg" alt="User persona story for Sammie" style="max-width: 650px; border: #d80f81 solid 1px;">
                 </picture>
                 <p> <b> User Flows </b><br>
                     Mapped out intuitive user journeys for seamless interaction. This included the main tasks: account
                     sign up, manually request information or definition, and using the phone’s voice command feature.
                 </p>
                 <div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-flow1@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-flow1@2x.png" alt="User persona story for Sammie">
+                            <img src="img/aota/aota-flow1@2x.png" alt="User persona story for Sammie" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-flow2@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-flow2@2x.png" alt="User persona story for Sammie">
+                            <img src="img/aota/aota-flow2@2x.png" alt="User persona story for Sammie" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-flow3@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-flow3@2x.png" alt="User persona story for Sammie">
+                            <img src="img/aota/aota-flow3@2x.png" alt="User persona story for Sammie" style="max-width: 400px;">
                         </picture>
                     </div>
                 </div>
-                <p> <b> Sketches </b><br>
+
+                <div>
+               <p> <b> Sketches </b><br>
                     Translated user flows into tangible app screens for clarity. I first quickly iterated some lo fi
                     sketches to flesh out my idea of what I thought the screens should look like. </p>
                 <picture>
                     <source srcset="img/aota/aota-sketch@1x.jpg" media="screen and (max-width:767px)">
-                    <img src="img/aota/aota-sketch@2x.jpg" alt="Ask Olive brand guidelines">
+                    <img src="img/aota/aota-sketch@2x.jpg" alt="Ask Olive brand guidelines" style="max-width: 650px;">
                 </picture>
                 <p> <b> Prototypes </b><br>
                     Crafted mid-fidelity wireframes to visualize the app’s core features. I took my sketches and
                     recreated them in Adobe Photoshop, iterating as I did so. </p>
                 <div class="row">
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen1@1x.jpg" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen1@2x.jpg" alt="Ask Siri or Alexa stech">
+                            <img src="img/aota/aota-screen1@2x.jpg" alt="Ask Siri or Alexa stech" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen2@1x.jpg" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen2@2x.jpg" alt="Better understand sketch">
+                            <img src="img/aota/aota-screen2@2x.jpg" alt="Better understand sketch" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen3@1x.jpg" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen3@2x.jpg" alt="Get started sketch">
+                            <img src="img/aota/aota-screen3@2x.jpg" alt="Get started sketch" style="max-width: 400px;">
                         </picture>
                     </div>
                 </div>
+            </div>
 
                 <div class="row">
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen-cln1@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen-cln1@2x.png" alt="Ask Siri or Alexa screen">
+                            <img src="img/aota/aota-screen-cln1@2x.png" alt="Ask Siri or Alexa screen" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen-cln2@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen-cln2@2x.png" alt="Better understand screen">
+                            <img src="img/aota/aota-screen-cln2@2x.png" alt="Better understand screen" style="max-width: 400px;">
                         </picture>
                     </div>
-                    <div>
+                    <div class="col-md-4">
                         <picture>
                             <source srcset="img/aota/aota-screen-cln3@1x.png" media="screen and (max-width:767px)">
-                            <img src="img/aota/aota-screen-cln3@2x.png" alt="Get started screen">
+                            <img src="img/aota/aota-screen-cln3@2x.png" alt="Get started screen" style="max-width: 400px;">
                         </picture>
                     </div>
                 </div>
@@ -231,23 +237,27 @@
                     Involved real readers to refine the app’s usability. I created a usability test plan that involved
                     five 10-minute sessions with potential users and observed their words and actions as they attempted
                     to complete specific tasks. </p>
-                <picture>
+                <picture class="fade-in-image">
                     <source srcset="img/aota/aota-testing@2x.jpg" media="screen and (max-width:767px)">
-                    <img src="img/aota/aota-testing@2x.jpg" alt="Usability testing plan">
+                    <img src="img/aota/aota-testing@2x.jpg" alt="Usability testing plan" style="max-width: 650px; border: #d80f81 solid 1px;">
                 </picture>
             </div><!-- End container -->
         </div> <!-- End section: Approach -->
 
-        <div> <!-- Start section: Solution -->
-            <div class="container">
-                <div>
+       
+        <div id="aota-solution">
+            <div class="row"> 
+                <div class="container"> <!-- Start section: Solution -->
+
                     <picture>
                         <source srcset="img/aota/aota-scrn-clr@1x.jpg" media="screen and (max-width:767px)">
-                        <img src="img/aota/aota-scrn-clr@2x.jpg"
+                        <img src="img/aota/aota-scrn-clr@2x.jpg" class="rem-space"
                             alt="Clean screenshot of AOTA onboarding screen on mobile">
                     </picture>
                 </div>
-                <div>
+                </div>
+                
+                <div class="container">
                     <h4> THE SOLUTION </h4>
                     <p> AOTA’s design is elegant and user-centric. Seamlessly access word definitions by typing them in
                         the dynamic search field or effortlessly integrate the app with voice command features like Siri
@@ -260,7 +270,7 @@
                         yourself in the intricate details of your favorite series, as AOTA transforms your reading
                         experience into a captivating adventure.
                     </p>
-                </div>
+                
             </div> <!-- End container -->
         </div> <!-- End section: Solution -->
     </main>
@@ -273,8 +283,7 @@
                         viewBox="0,0,256,256" style="fill:#000000;">
                         <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none"  font-size="none" 
-                            style="mix-blend-mode: normal">
+                            font-family="none" font-size="none" style="mix-blend-mode: normal">
                             <g transform="scale(5.12,5.12)">
                                 <path
                                     d="M25,2c-12.682,0 -23,10.317 -23,23c0,12.683 10.318,23 23,23c12.682,0 23,-10.317 23,-23c0,-12.683 -10.318,-23 -23,-23zM18,35h-4v-15h4zM16,17c-1.105,0 -2,-0.895 -2,-2c0,-1.105 0.895,-2 2,-2c1.105,0 2,0.895 2,2c0,1.105 -0.895,2 -2,2zM37,35h-4v-5v-2.5c0,-1.925 -1.575,-3.5 -3.5,-3.5c-1.925,0 -3.5,1.575 -3.5,3.5v7.5h-4v-15h4v1.816c1.168,-1.122 2.752,-1.816 4.5,-1.816c3.59,0 6.5,2.91 6.5,6.5z">
@@ -289,8 +298,7 @@
                         viewBox="0,0,256,256" style="fill:#000000;">
                         <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-size="none" 
-                            style="mix-blend-mode: normal">
+                            font-family="none" font-size="none" style="mix-blend-mode: normal">
                             <g transform="scale(5.12,5.12)">
                                 <path
                                     d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z">
@@ -305,8 +313,7 @@
                         viewBox="0,0,256,256" style="fill:#000000;">
                         <g fill="#eeeae5" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-size="none" 
-                            style="mix-blend-mode: normal">
+                            font-family="none" font-size="none" style="mix-blend-mode: normal">
                             <g transform="scale(8.53333,8.53333)">
                                 <path
                                     d="M15,2c-7.168,0 -13,5.832 -13,13c0,7.168 5.832,13 13,13c7.168,0 13,-5.832 13,-13c0,-7.168 -5.832,-13 -13,-13zM11.66602,6h6.66602c3.125,0 5.66797,2.54202 5.66797,5.66602v6.66602c0,3.125 -2.54202,5.66797 -5.66602,5.66797h-6.66602c-3.125,0 -5.66797,-2.54202 -5.66797,-5.66602v-6.66602c0,-3.125 2.54202,-5.66797 5.66602,-5.66797zM11.66602,8c-2.021,0 -3.66602,1.64597 -3.66602,3.66797v6.66602c0,2.021 1.64597,3.66602 3.66797,3.66602h6.66602c2.021,0 3.66602,-1.64597 3.66602,-3.66797v-6.66601c0,-2.021 -1.64597,-3.66602 -3.66797,-3.66602zM19.66797,9.66602c0.368,0 0.66602,0.29802 0.66602,0.66602c0,0.368 -0.29801,0.66797 -0.66602,0.66797c-0.368,0 -0.66797,-0.29997 -0.66797,-0.66797c0,-0.368 0.29997,-0.66602 0.66797,-0.66602zM15,10c2.757,0 5,2.243 5,5c0,2.757 -2.243,5 -5,5c-2.757,0 -5,-2.243 -5,-5c0,-2.757 2.243,-5 5,-5zM15,12c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z">
@@ -321,6 +328,7 @@
             </p>
         </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

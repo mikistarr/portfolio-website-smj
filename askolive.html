@@ -9,20 +9,24 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="img/favicon.png" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/9d223b9659.js" crossorigin="anonymous"></script>
     <title>MikiStarr | UI/UX Design | St. Paul MN</title>
 </head>
 
 <body id="askolive">
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a href="index.html"> <img src="img/starr-logo.svg" class="logo" alt="Being MikiStarr logo"> </a>
             <nav>
                 <ul>
                     <li> <a href="index.html#projects"> Work </a> </li>
                     <li> <a href="about.html"> About </a> </li>
-                    <li> <a href="mailto:designer@mikistarr.com"> Contact </a> </li>
+                    <li> <a href="mailto:designer@mikistarr.com" onclick="menuToggle()"> Contact </a> </li>
+                    <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a> </li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
 
@@ -34,7 +38,7 @@
                     <h2> Better Health Starts with Better Health Education </h2>
                     <span> Unleashing AI's potential to Foster Personalized Achievement in Health and Wellness </span>
                 </div>
-                
+
                 <div>
                     <picture>
                         <source srcset="img/ask-olive/askolive-olive-phone@1x.png" media="screen and (max-width:767px)">
@@ -116,7 +120,8 @@
                                 <picture>
                                     <source srcset="img/ask-olive/askolive-persona@1x.jpg"
                                         media="screen and (max-width:767px)">
-                                    <img src="img/ask-olive/askolive-persona@2x.jpg" class="rotateimg-8" alt="User persona story">
+                                    <img src="img/ask-olive/askolive-persona@2x.jpg" class="rotateimg-8"
+                                        alt="User persona story">
                                 </picture>
                             </figure>
                         </div>
@@ -126,8 +131,8 @@
                                 <picture>
                                     <source srcset="img/ask-olive/askolive-persona-journey@1x.jpg"
                                         media="screen and (max-width:767px)">
-                                    <img src="img/ask-olive/askolive-persona-journey@2x.jpg"
-                                    class="rotateimg5" alt="User persona jpurney map">
+                                    <img src="img/ask-olive/askolive-persona-journey@2x.jpg" class="rotateimg5"
+                                        alt="User persona jpurney map">
                                 </picture>
                             </figure>
                         </div>
@@ -180,22 +185,23 @@
                 <p> These selections formed the basis for devising a well-founded user flow. Through a card sorting
                     activity involving anonymous volunteers, the flow was refined to better synchronize with real-world
                     user expectations. </p>
-                <figure>
-                    <picture>
-                        <source srcset="img/ask-olive/askolive-sitemap-V1@1x.jpg" media="screen and (max-width:767px)">
-                        <img src="img/ask-olive/askolive-sitemap-V1@2x.jpg" alt="Version 1 of Ask Olive sitemap">
-                    </picture>
-                    <figcaption> Original flow based on assumptions about how users would interact </figcaption>
-                </figure>
+                    
+                    <img id="myImg" src="img/ask-olive/askolive-sitemap-V1@2x.jpg" alt="Version 1 of Ask Olive sitemap">
+                    
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
 
-                <figure>
-                    <picture>
-                        <source srcset="img/ask-olive/askolive-sitemap-V2@1x.jpg" media="screen and (max-width:767px)">
-                        <img src="img/ask-olive/askolive-sitemap-V2@2x.jpg" alt="Revised Ask Olive sitemap">
-                    </picture>
-                    <figcaption> Revised flow based on user feedback received during a closed card sort exercise
-                    </figcaption>
-                </figure>
+                      <img id="myImg2" src="img/ask-olive/askolive-sitemap-V2@2x.jpg" alt="Final version of Ask Olive sitemap">
+
+                    <div id="myModal2" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img02">
+                        <div id="caption2"></div>
+                      </div>
+                
             </div> <!-- End container -->
         </div> <!-- End section: Information Architecture -->
 
@@ -384,6 +390,7 @@
             </p>
         </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
