@@ -824,6 +824,7 @@ blockquote {
 .button:visited {
   background-color: #dd0e83;
   color: #fff;
+  text-decoration: none;
 }
 
 .button:hover {
